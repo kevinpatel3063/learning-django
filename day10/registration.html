@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            justify-items: center;
+            height: 96vh;
+            background: black;
+            color: white;
+            /* background-image: radial-gradient(to right, blue, black, black); */
+            /* background-image: radial-gradient(blue,blue, black); */
+            /* font-size: 3rem; */
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        td {
+            padding: 10px;
+        }
+
+        img {
+            width: 235px;
+            height: 367px;
+        }
+        input {
+            background-color: black;
+            color: white;
+            border: 1.5px solid white;
+            border-radius: 5px;
+            padding: 5px;
+        }
+        button {
+            width: 100%;
+            background-color: black;
+            color: white;
+            border: 1px solid white;
+            border-radius: 10px;
+            font-size: 1rem;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="container">
+        <h1>Registration</h1>
+        <table>
+            <tr>
+                <td>
+                    <label>Full Name</label>
+                </td>
+                <td>
+                    <input type="text" name="fname" id="fname" placeholder="Full Name">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label>Phone Number</label>
+                </td>
+                <td>
+                    <input type="tel" name="p-no" id="p-no" placeholder="Phone Number">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label>Email</label>
+                </td>
+                <td>
+                    <input type="email" name="email" id="email" placeholder="Email">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label>Password</label>
+                </td>
+                <td>
+                    <input type="password" name="password" id="password" placeholder="Password">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label>Confirm Password</label>
+                </td>
+                <td>
+                    <input type="password" name="c-password" id="c-password" placeholder="Confirm Password">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label>Date of Birth</label>
+                </td>
+                <td>
+                    <input type="date" id="dob">
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <center><button onclick="storeData()">Submit</button></center>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <img src="https://images.pexels.com/photos/20071490/pexels-photo-20071490/free-photo-of-parliament-of-budapest.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+        alt="">
+    <script>
+        function storeData() {
+            let fname = document.getElementById("fname")
+            let tel = document.getElementById("p-no")
+            let email = document.getElementById("email")
+            let password = document.getElementById("password")
+            let c_password = document.getElementById("c-password")
+            let dob = document.getElementById("dob")
+
+            let data = [fname, tel, email, password, c_password, dob]
+            let counter = 0
+            let final_data = []
+            data.map((d) => {
+                if (!d.value) {
+                    d.style.border = "1.5px solid red"
+                    // alert("This field cannot be empty")
+                } else {
+                    d.style.border = "1.5px solid grey"
+                    // console.log(d.value)
+                    final_data[counter] = d.value
+                    counter++
+
+                }
+            })
+            if (password.value != c_password.value) {
+                c_password.style.border = "1.5px solid red"
+            } else {
+                c_password.style.border = "1.5px solid grey"
+                localStorage.setItem("data", final_data)
+            }
+            console.log(final_data)
+
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+</head>
+
+<body>
+    <h1>Login</h1>
+    <input type="email" name="email" id="email" placeholder="Email">
+    <br><br>
+    <input type="password" name="password" id="pass" placeholder="Password">
+    <br><br>
+    <button onclick="getData()">Submit</button>
+
+    <script>
+        function getData() {
+            // let email = document.getElementById("email").value
+
+            // let password = document.getElementById("pass").value
+            let data = {
+                "email": document.getElementById("email").value,
+                "password": document.getElementById("pass").value
+            }
+            if(!data.email) {
+                alert("Blank email")
+            }
+            console.log(data.email, data.password)
+        }
+    </script>
+
+
+</body>
+
+</html>
