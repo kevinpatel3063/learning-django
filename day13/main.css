@@ -1,0 +1,32 @@
+body{
+    background-color: yellow;
+    height: 96vh;
+    font-size: 40px;
+    /* display: flex; */
+    justify-content: center;
+    font-weight: bolder;
+    justify-items: center;
+    align-items: center;
+    margin-left: 800px;
+    align-items: center;
+}
+.but{
+    /* align-items: center;
+    justify-content: center;
+    justify-items: center; */
+    text-align: center;
+    margin: 12vh 0vw;
+}
+#reset, #stop , #start{
+    background-color: pink;
+    height: 70px;
+    width: 100px;
+    border: 1px solid black;
+    border-radius: 2px;
+}
+ .container-main{ 
+    margin: -4vh 0vw; 
+}
+.container{
+    margin: 40vh -3vw;
+}
