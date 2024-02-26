@@ -1,54 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>food menu using JS</title>
-    <link rel="stylesheet" href="/main.css">
+    <title>Food Menu using JS</title>
+    <link rel="stylesheet" href="main.css">
 </head>
-
 <body>
-    <div class="containeer"><select name="menu" id="menu">
+    <div class="container">
+        <select name="menu" id="menu">
             <option value="#">--Select your option--</option>
             <option value="breads">Breads</option>
             <option value="panner">Panner</option>
             <option value="desert">Deserts</option>
         </select>
-        <div id="main-menu">
+        <div id="main_menu">
             <div id="breads">
                 <h1>Breads</h1>
                 <ul>
-                    <li><input type="checkbox" class="breads" value="Butter naan">Butter Naan</li>
-                    <li><input type="checkbox" class="breads" value="Plain Roti">Plain Roti</li>
-                    <li><input type="checkbox" class="breads" value="Garlic Naan">Garlic naan</li>
-                    <li><input type="checkbox" class="breads" value="Lacha paratha">Lacha paratha</li>
+                    <li><input type="checkbox" name="breads" class="breads" value="butter naan">Butter Naan</li>
+                    <li><input type="checkbox" name="breads" class="breads" value="plain roti">Plain Roti</li>
+                    <li><input type="checkbox" name="breads" class="breads" value="garlic naan">Garlic Naan</li>
+                    <li><input type="checkbox" name="breads" class="breads" value="lacha paratha">Lacha Paratha</li>
                 </ul>
             </div>
-            <div id="Panner">
+            <div id="panner">
                 <h1>Panner</h1>
                 <ul>
-                    <li><input type="checkbox" class="Panner" value="Panner Tikka">Panner Tikks</li>
-                    <li><input type="checkbox" class="Panner" value="Panner bhurji">Panner bhurji</li>
-                    <li><input type="checkbox" class="Panner" value="Panner handi">Panner handi</li>
-                    <li><input type="checkbox" class="Panner" value="Panner Butter Masala">Panner Butter Masala</li>
+                    <li><input type="checkbox" name="panner" class="panner" value="panner bhurji">Panner Bhurji</li>
+                    <li><input type="checkbox" name="panner" class="panner" value="panner tikka">Panner Tikka</li>
+                    <li><input type="checkbox" name="panner" class="panner" value="panner butter masala">Panner Butter Masala</li>
+                    <li><input type="checkbox" name="panner" class="panner" value="palak panner">Palak Panner</li>
                 </ul>
             </div>
-            <div id="Desert">
+            <div id="desert">
                 <h1>Deserts</h1>
                 <ul>
-                    <li><input type="checkbox" class="Deserts" value="Gulab Jamun">Gulab Jamun</li>
-                    <li><input type="checkbox" class="Deserts" value="Vanila">Vanila</li>
-                    <li><input type="checkbox" class="Deserts" value="rasmalai">rasmalai</li>
-                    <li><input type="checkbox" class="Deserts" value="Rabdi">Rabdi</li>
+                    <li><input type="checkbox" name="desert" class="desert" value="gulan jamnu">Gulab Jamnu</li>
+                    <li><input type="checkbox" name="desert" class="desert" value="ice cream">Ice cream</li>
+                    <li><input type="checkbox" name="desert" class="desert" value="rabdi">Rabdi</li>
+                    <li><input type="checkbox" name="desert" class="desert" value="rasmalayi">Rasmalayi</li>
                 </ul>
             </div>
         </div>
-        <button onclick="">Submit</button>
+        <button onclick="menuCollected()">Submit</button>
     </div>
-    <script src="/style.js"></script>
-
-
+    <script src="./script.js"></script>
 </body>
-
 </html>

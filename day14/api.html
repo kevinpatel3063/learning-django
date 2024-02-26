@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <select name="country" id="country">
+        <option value="#">--Select your value--</option>
+        <option value="India">India</option>
+        <option value="Canada">Canada</option>
+    </select>
+
+    <button onclick="getData()">Submit</button>
+    <script>
+
+        async function getData() {
+            let country = document.getElementById("country").value
+            let url = `https://restcountries.com/v3.1/name/${country}?fullText=true`
+            let response = await fetch(url)
+            let data = await response.json()
+            console.log(data[0].name)
+        }
+
+    </script>
+</body>
+
+</html>

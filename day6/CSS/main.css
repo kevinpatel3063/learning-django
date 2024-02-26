@@ -21,15 +21,18 @@ div.container{
     justify-items: right;
     border-radius: 10px;
 }
+li:hover{
+    background-color: white;
+}
 a{
     color: orange;
     text-decoration: none;
 }
-ul{
+/* ul{
     transform: rotate(270deg);
     
     margin: 87vh -38vw;
-}
+} */
 img{
     height: 70px;
     width: 70px;

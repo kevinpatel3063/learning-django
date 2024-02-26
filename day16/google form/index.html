@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>googlr page-header</title>
+    <style>
+        /*.container-main{
+            display: flex;
+            align-items: center;
+            align-content: center;
+            justify-content: center;
+            justify-items: center;
+                    }*/
+                    .hello1{
+                      border-right: 0px;
+                      padding: 20px;
+                      border-radius: 7px 0px 0px 7px;
+                    }
+                    .hello{
+                        border-left: 0px;
+                        padding: 20px;
+                        color: black;
+                        border-radius: 0px 7px 7px 0px;
+                    }
+                    input[type="text"]{
+                        border-radius: 7px 7px 7px 7px;
+                    }
+                    
+                    
+                    input[type="text"],
+                    input[type="email"],
+                    input[type="eemail"]{
+                        padding: 20px;
+                    }
+                    .but{
+                        align-items: center;
+                        align-content: center;
+                        justify-content: center;
+                        justify-items: center;
+                        height: 50px;
+                        width: 90px;
+                        background-color: white;
+                        color: black;
+                        border: 0px;
+                        font-size: larger;
+                        
+                    }
+                    .but:hover{
+                        border-radius: 5px 5px 5px 5px;
+                        background-color: black;
+                        color: white;
+                        
+                    }
+                    
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <img src="/google form/Google-Logo-2015-present.jpg" alt="logo" height="200px" >
+    </div>
+    <h1>Create Your Google Accounts</h1>
+
+    <div class="container-main">
+        
+        <form
+            action="https://accounts.google.com/lifecycle/steps/signup/name?continue=https://www.google.com?hl%3Den-US&dsh=S1745002927:1708500602761525&ec=GAlA8wE&flowEntry=SignUp&flowName=GlifWebSignIn&hl=en&theme=glif&TL=ADg0xR0jiHvq4UhbXqkXnReyj-D4aawNdz4eN1qyjZ_lerFj5tGLrNKJWo6iAKr8">
+           <input type="text" name="First-Name" id="firstname" placeholder="First Name">&nbsp;&nbsp;&nbsp;
+           <input type="text" name="Last Name" id="lname" placeholder="Last name"><br><br><br>
+            <input type="email" class="hello1" name="Email" id="email" placeholder="username"><input type="eemail" class="hello" name="Email" id="email"  value="@gmail.com" readonly><br><br><br>
+            <input type="text" name="Password" id="password" placeholder="Password"><br><br><br>
+            <input type="text" name="Confirm Password" id="cnfrmpass" placeholder="Confirm Password"><br><br><br>
+<button class="but" type="submit" ><b>Submit</b></button>
+        </form>
+    </div>
+
+</body>
+
+</html>

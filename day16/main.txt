@@ -1,0 +1,21 @@
+1. What is the use of CSS?
+ ANS:- to style and layout web pages .
+
+2. Where can inline CSS be used?
+ANS :- to apply a unique style to a single HTML element.
+
+3. What is the full form of HTML, CSS?
+ANS:- HTML - Hyper Text Markup Language
+CSS - Cascading Style Sheet
+
+4. What is the difference between internal and external CSS?
+ANS :- Internal CSS styles are included within the head section of 
+an HTML document and apply to the entire document, allowing for 
+consistent styling across multiple elements. External CSS styles 
+are stored in a separate file and can be linked to multiple HTML documents, 
+allowing for global styling across an entire website.
+
+5. What is the difference between a webpage and a website?
+ANS:-The webpage is a single document on the web using a unique URL, 
+while a website is a collection of multiple webpages in which information on a
+ related topic or another subject is linked together under the same domain address.

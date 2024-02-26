@@ -1,0 +1,54 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+    background-color: black;
+    color: white;
+    height: 96vh;
+}
+
+#main_menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+}
+
+select {
+    margin-left: 10px;
+    transform: scale(1.6);
+}
+
+h1 {
+    text-shadow: white 2px 2px 3px;
+}
+
+div#breads{
+    border: 1px solid white;
+    margin: 35px -112px;
+    padding: 12px 35px;
+    opacity: 1;
+
+}
+ div#panner, div#desert {
+    border: 1px solid white;
+    margin: 35px -112px;
+    padding: 12px 35px;
+    opacity: 0;
+}
+
+.fadein {
+    animation: fade 1s ease-in-out 0s 1 normal forwards;
+}
+
+.fadeout {
+    animation: fade 1s ease-in-out 0s 1 reverse forwards;
+}
+@keyframes fade {
+    from {
+        opacity: 0;
+    } to {
+        opacity: 1;
+    }
+}
